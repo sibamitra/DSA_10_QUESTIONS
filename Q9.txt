@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+ vector < int > a(vector < int > g){
+ vector<int> u;
+for(int i=0; i<g.size(); i++){
+   if(g[i]%5>=3 && g[i]>=38){
+     u.push_back(((g[i]/5)+1) *5);
+        }
+        else{
+      u.push_back(g[i]);
+        }
+ }
+    return u;
+}
+int main() {
+    int n;
+     cout<<"The original grades are:"<<endl;
+    cin >> n;
+    vector<int> g(n);
+    for(int k_i = 0; k_i < n; k_i++){
+         cin >> g[k_i];
+    }
+    vector < int > r = a(g);
+       cout<<"The final grades are:"<<endl;
+    for (size_t i = 0; i < r.size(); i++) {
+        cout << r[i] << (i != r.size() - 1 ? "\n" :"");
+    }
+ cout << endl;
+    }

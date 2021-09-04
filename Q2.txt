@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+        int n1, n2, n3, a, b;
+        cout << " Enter the three numbers :"<<endl;
+            cin >> n1 >> n2 >> n3;
+    a = n1;
+    b = n2;
+    if (n3 > a){
+    a = n3;
+}
+    if (n2 > a) {
+                a = n2;
+                    }
+        cout << " The Largest number among ( " << n1 << ", " << n2 << ", " << n3 << " ) is : " << a;
+    }
